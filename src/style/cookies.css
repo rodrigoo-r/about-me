@@ -1,0 +1,22 @@
+#cookies > .card > .body > div {
+    display: flex;
+    gap: 10px;
+}
+
+#cookies > .card > .body > div > button {
+    margin-left: auto;
+    width: 100%;
+    background: var(--primary-color);
+    box-sizing: border-box;
+    border: none;
+    padding: 10px;
+    font-weight: 600;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    #cookies > .card > .body > div {
+        flex-direction: column;
+    }
+}

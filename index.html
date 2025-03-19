@@ -20,7 +20,27 @@
     <meta property="og:url" content="https://rodrigoo-r.github.io/about-me/" />
 </head>
 <body>
-    <div id="socials" class="hide">
+    <div id="cookies" class="hide modal">
+        <div class="bg"></div>
+        <div class="card">
+            <div class="title">
+                <h3>🍪 Heads up!</h3>
+            </div>
+            <div class="body">
+                <span>
+                    This website uses cookies to determine user engagement
+                    and website visitors. In order to process your request,
+                    I need your consent. Please note that your decision
+                    will be remembered.
+                </span>
+                <div>
+                    <button id="accept_cookies">I accept</button>
+                    <button id="decline_cookies">I decline</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="socials" class="hide modal">
         <div class="bg"></div>
         <div class="card">
             <div class="title">
@@ -469,16 +489,10 @@
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./src/script/index.js"></script>
-    <script src="./src/script/social_modal.js"></script>
+    <script src="./src/script/social_modal.js" type="module"></script>
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DLLJB53B89"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-DLLJB53B89');
-    </script>
+    <script src="./src/script/cookies.js" type="module"></script>
 </body>
 </html>

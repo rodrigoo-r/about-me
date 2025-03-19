@@ -1,4 +1,4 @@
-#socials {
+.modal {
     position: fixed;
     z-index: -1;
     height: 100%;
@@ -7,11 +7,11 @@
     left: 0;
 }
 
-#socials.show, #socials.pre-hide {
+.modal.show, .modal.pre-hide {
     z-index: 2;
 }
 
-#socials > .bg {
+.modal > .bg {
     height: 100%;
     width: 100%;
     background: rgb(0, 0, 0);
@@ -25,11 +25,11 @@
     transition: all .3s ease-in-out 0s;
 }
 
-#socials.show > .bg {
+.modal.show > .bg {
     transform: scaleY(1);
 }
 
-#socials > .card {
+.modal > .card {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -40,41 +40,41 @@
     transform: translate(-50%, -50%) scaleY(0);
 }
 
-#socials.pre-hide > .card {
+.modal.pre-hide > .card {
     transform: translate(-50%, -50%) scaleY(0);
 }
 
-#socials.show > .card {
+.modal.show > .card {
     transform: translate(-50%, -50%) scaleY(1);
 }
 
-#socials > .card > .title {
+.modal > .card > .title {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-#socials > .card > .title > i {
+.modal > .card > .title > i {
     color: var(--lang-rust);
     cursor: pointer;
 }
 
-#socials > .card > .body > div {
+.modal > .card > .body > div {
     margin: 10px 0;
 }
 
-#socials > .card > .body > div > a {
+.modal > .card > .body > div > a {
     color: var(--primary-color);
     text-decoration: none;
 }
 
-#socials > .card > .body > div > a > span {
+.modal > .card > .body > div > a > span {
     display: inline-block;
     margin-left: 5px;
 }
 
 @media (max-width: 800px) {
-    #socials > .card {
+    .modal > .card {
         width: 90%;
     }
 }
