@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import "global.css";
+@import "introduction.css";
+@import "description.css";
+@import "projects.css";
+@import "skills.css";
+@import "timeline.css";
+@import "footer.css";
+@import "socials.css";

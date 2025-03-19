@@ -1,0 +1,83 @@
+#introduction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 26px;
+}
+
+#introduction > div:nth-of-type(1) {
+    width: 270px;
+    height: 270px;
+}
+
+#introduction > div:nth-of-type(1) > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 150px 100px rgba(70, 70, 70, 0.5);
+}
+
+#introduction > div:nth-of-type(2) > h2 {
+    font-size: 1.4rem;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.5);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+#introduction > div:nth-of-type(2) > h1 {
+    font-size: var(--font-size-large);
+    margin: 0;
+    font-weight: 900;
+}
+
+#introduction > div:nth-of-type(2) > p {
+    font-size: clamp(1rem, 2vw, 2vh);
+    margin: 0;
+}
+
+#introduction > div:nth-of-type(2) > .buttons {
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+#introduction > div:nth-of-type(2) > .buttons > a {
+    background: var(--secondary-color);
+    padding: 15px;
+    border-radius: var(--border-radius);
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+}
+
+#introduction > div:nth-of-type(2) > .buttons > a > span {
+    display: inline-block;
+    margin-left: 4px;
+}
+
+#introduction > div:nth-of-type(2) > .buttons > a:nth-of-type(2) {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+#introduction > div:nth-of-type(2) > .buttons > a:nth-of-type(2) > span {
+    margin-left: 0;
+    margin-right: 4px;
+}
+
+#socials-btn {
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    #introduction {
+        flex-direction: column;
+    }
+
+    #introduction > div:nth-of-type(2) > .buttons {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,80 @@
+#socials {
+    position: fixed;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+#socials.show, #socials.pre-hide {
+    z-index: 2;
+}
+
+#socials > .bg {
+    height: 100%;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    opacity: 0.5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: all .3s ease-in-out 0s;
+}
+
+#socials.show > .bg {
+    transform: scaleY(1);
+}
+
+#socials > .card {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform-origin: top;
+    transition: all .3s ease-in-out 0s;
+    z-index: 3;
+    width: var(--mid-screen-size);
+    transform: translate(-50%, -50%) scaleY(0);
+}
+
+#socials.pre-hide > .card {
+    transform: translate(-50%, -50%) scaleY(0);
+}
+
+#socials.show > .card {
+    transform: translate(-50%, -50%) scaleY(1);
+}
+
+#socials > .card > .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#socials > .card > .title > i {
+    color: var(--lang-rust);
+    cursor: pointer;
+}
+
+#socials > .card > .body > div {
+    margin: 10px 0;
+}
+
+#socials > .card > .body > div > a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+#socials > .card > .body > div > a > span {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+@media (max-width: 800px) {
+    #socials > .card {
+        width: 90%;
+    }
+}

@@ -1,0 +1,11 @@
+footer {
+    text-align: center;
+}
+
+footer > span {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.5);
+    letter-spacing: 3px;
+    font-weight: 600;
+}

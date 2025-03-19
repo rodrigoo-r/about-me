@@ -1,0 +1,72 @@
+#timeline {
+    margin: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#timeline > .title {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#timeline > .title > h2 {
+    font-size: var(--font-size-medium);
+    margin: 0;
+    font-weight: 900;
+}
+
+#timeline > .content > .line {
+    position: relative;
+    width: var(--mid-screen-size);
+    height: 8px;
+    background: var(--secondary-color);
+    border-radius: var(--border-radius);
+    margin-bottom: 60px;
+}
+
+#timeline > .content > .line > .dot {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: var(--tertiary-color);
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#timeline > .content > .line > .dot > span {
+    position: absolute;
+    top: 25px;
+}
+
+#timeline > .content > .line > .dot:nth-child(1) {
+    left: 0;
+}
+
+#timeline > .content > .line > .dot:nth-child(2) {
+    left: 35%;
+}
+
+#timeline > .content > .line > .dot:nth-child(3) {
+    left: 70%;
+}
+
+#timeline > .content > .line > .dot:last-child {
+    right: 0;
+}
+
+#timeline > .content > .story {
+    width: var(--mid-screen-size);
+}
+
+@media (max-width: 800px) {
+    #timeline > .content > .story {
+        width: unset;
+    }
+
+    #timeline > .content > .line {
+        width: 100%;
+    }
+}

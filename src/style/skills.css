@@ -1,0 +1,236 @@
+#skills {
+    margin: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#skills > .title {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#skills > .title > h2 {
+    font-size: var(--font-size-medium);
+    margin: 0;
+    font-weight: 900;
+}
+
+#skills > .content {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+#skills > .content > div > .lang {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+#skills > .content > div > .lang > .brand {
+    display: flex;
+    align-items: center;
+}
+
+#skills > .content > div > .lang > .brand > img {
+    height: 16px;
+    width: 16px;
+}
+
+#skills > .content > div > .lang > .brand > span {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+#skills > .content > div > .lang > .familiarity {
+    text-align: right;
+}
+
+#skills > .content > div > .lang > .familiarity > .bar {
+    width: 200px;
+    height: 10px;
+    background: var(--tertiary-color);
+    border-radius: var(--border-radius);
+    margin-bottom: 5px;
+    position: relative;
+}
+
+#skills > .content > div > .lang > .familiarity > .bar > .progress {
+    position: absolute;
+    height: 100%;
+    border-radius: var(--border-radius);
+}
+
+#skills > .content > div > .lang > .familiarity > .bar > .progress.full {
+    width: 100%;
+}
+
+#skills > .content > div > .lang > .familiarity > .bar > .progress.half {
+    width: 50%;
+}
+
+#skills > .content > div > .lang > .familiarity > .bar > .progress.almost-full {
+    width: 75%;
+}
+
+#skills > .content > div > .lang.go {
+    color: var(--lang-go);
+}
+
+#skills > .content > div > .lang.java {
+    color: var(--lang-java);
+}
+
+#skills > .content > div > .lang.js {
+    color: var(--lang-js);
+}
+
+#skills > .content > div > .lang.rust {
+    color: var(--lang-rust);
+}
+
+#skills > .content > div > .lang.html {
+    color: var(--lang-html);
+}
+
+#skills > .content > div > .lang.css {
+    color: var(--lang-css);
+}
+
+#skills > .content > div > .lang.ts {
+    color: var(--lang-ts);
+}
+
+#skills > .content > div > .lang.vue {
+    color: var(--lang-vue);
+}
+
+#skills > .content > div > .lang.c {
+    color: var(--lang-c);
+}
+
+#skills > .content > div > .lang.cpp {
+    color: var(--lang-cpp);
+}
+
+#skills > .content > div > .lang.react {
+    color: var(--lang-react);
+}
+
+#skills > .content > div > .lang.node {
+    color: var(--lang-node);
+}
+
+#skills > .content > div > .lang.deno {
+    color: var(--lang-deno);
+}
+
+#skills > .content > div > .lang.bash {
+    color: var(--lang-shell);
+}
+
+#skills > .content > div > .lang.sql {
+    color: var(--lang-sql);
+}
+
+#skills > .content > div > .lang.mongo {
+    color: var(--lang-mongo);
+}
+
+#skills > .content > div > .lang.lua {
+    color: var(--lang-lua);
+}
+
+#skills > .content > div > .lang.en {
+    color: var(--lang-go);
+}
+
+#skills > .content > div > .lang.es {
+    color: var(--lang-js);
+}
+
+#skills > .content > div > .lang.java > .familiarity > .bar > .progress {
+    background: var(--lang-java);
+}
+
+#skills > .content > div > .lang.go > .familiarity > .bar > .progress {
+    background: var(--lang-go);
+}
+
+#skills > .content > div > .lang.js > .familiarity > .bar > .progress {
+    background: var(--lang-js);
+}
+
+#skills > .content > div > .lang.rust > .familiarity > .bar > .progress {
+    background: var(--lang-rust);
+}
+
+#skills > .content > div > .lang.html > .familiarity > .bar > .progress {
+    background: var(--lang-html);
+}
+
+#skills > .content > div > .lang.css > .familiarity > .bar > .progress {
+    background: var(--lang-css);
+}
+
+#skills > .content > div > .lang.ts > .familiarity > .bar > .progress {
+    background: var(--lang-ts);
+}
+
+#skills > .content > div > .lang.vue > .familiarity > .bar > .progress {
+    background: var(--lang-vue);
+}
+
+#skills > .content > div > .lang.c > .familiarity > .bar > .progress {
+    background: var(--lang-c);
+}
+
+#skills > .content > div > .lang.cpp > .familiarity > .bar > .progress {
+    background: var(--lang-cpp);
+}
+
+#skills > .content > div > .lang.react > .familiarity > .bar > .progress {
+    background: var(--lang-react);
+}
+
+#skills > .content > div > .lang.node > .familiarity > .bar > .progress {
+    background: var(--lang-node);
+}
+
+#skills > .content > div > .lang.deno > .familiarity > .bar > .progress {
+    background: var(--lang-deno);
+}
+
+#skills > .content > div > .lang.bash > .familiarity > .bar > .progress {
+    background: var(--lang-shell);
+}
+
+#skills > .content > div > .lang.sql > .familiarity > .bar > .progress {
+    background: var(--lang-sql);
+}
+
+#skills > .content > div > .lang.mongo > .familiarity > .bar > .progress {
+    background: var(--lang-mongo);
+}
+
+#skills > .content > div > .lang.lua > .familiarity > .bar > .progress {
+    background: var(--lang-lua);
+}
+
+#skills > .content > div > .lang.en > .familiarity > .bar > .progress {
+    background: var(--lang-go);
+}
+
+#skills > .content > div > .lang.es > .familiarity > .bar > .progress {
+    background: var(--lang-js);
+}
+
+@media (max-width: 800px) {
+    #skills > .content {
+        flex-direction: column;
+        gap: 0;
+    }
+}

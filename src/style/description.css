@@ -1,0 +1,16 @@
+#description {
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#description > .card > .body > p {
+    width: var(--mid-screen-size);
+}
+
+@media (max-width: 800px) {
+    #description > .card > .body > p {
+        width: initial;
+    }
+}

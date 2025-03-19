@@ -1,0 +1,13 @@
+@import "card.css";
+@import "var.css";
+
+body, html {
+    margin: 40px 40px 60px 40px;
+    padding: 0;
+    background: var(--background-color);
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--primary-color);
+}
